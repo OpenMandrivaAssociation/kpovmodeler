@@ -1,7 +1,7 @@
 Summary:	A modeling and composition program
 Name:		kpovmodeler
 Version: 	1.1.2
-Release: 	%mkrel 3
+Release: 	%mkrel 4
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/4.0.4/src/extragear/%name-%version-kde4.0.4.tar.bz2
 License: 	GPLv2+
 Group: 		Graphics
@@ -10,6 +10,7 @@ BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdelibs4-devel
 Conflicts:	kdegraphics-kpovmodeler
 Conflicts:	%{_lib}kdegraphics0-kpovmodeler
+Conflicts:	kde-l10n < 3.5.9-5
 
 %description 
 Program to enter scenes for the 3D rendering engine PovRay.
