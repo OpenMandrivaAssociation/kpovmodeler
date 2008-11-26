@@ -1,15 +1,16 @@
 Summary:	A modeling and composition program
 Name:		kpovmodeler
 Version: 	1.1.3
-Release: 	%mkrel 1
+Release: 	%mkrel 2
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/4.1.0/src/extragear/%name-%version-kde4.1.0.tar.bz2
 License: 	GPLv2+
 Group: 		Graphics
 Url: 		http://www.kpovmodeler.org
 BuildRoot: 	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires: 	kdelibs4-devel
-Conflicts:	kdegraphics-kpovmodeler
-Conflicts:	%{_lib}kdegraphics0-kpovmodeler
+Obsoletes:	kdegraphics-kpovmodeler < 1:3.5.10-3
+Obsoletes:	%{_lib}kdegraphics0-kpovmodeler < 1:3.5.10-3
+Obsoletes:	%{_lib}kdegraphics0-kpovmodeler-devel < 1:3.5.10-3
 Conflicts:	kde-l10n < 3.5.9-5
 
 %description 
