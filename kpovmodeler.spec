@@ -1,7 +1,7 @@
 Summary:	A modeling and composition program
 Name:		kpovmodeler
 Version: 	1.1.3
-Release: 	%mkrel 4
+Release: 	%mkrel 5
 Source0: 	http://fr2.rpmfind.net/linux/KDE/stable/4.1.0/src/extragear/%name-%version-kde4.1.0.tar.bz2
 License: 	GPLv2+
 Group: 		Graphics
