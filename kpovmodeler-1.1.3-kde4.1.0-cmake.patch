@@ -1,0 +1,21 @@
+diff -urN kpovmodeler-1.1.3-kde4.1.0/CMakeLists.txt kpovmodeler-1.1.3-kde4.1.0-patched/CMakeLists.txt
+--- kpovmodeler-1.1.3-kde4.1.0/CMakeLists.txt	2008-07-24 05:24:55.000000000 +1100
++++ kpovmodeler-1.1.3-kde4.1.0-patched/CMakeLists.txt	2014-03-07 18:25:43.000000000 +1100
+@@ -11,7 +11,7 @@
+ 
+ configure_file(config-kpovmodeler.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kpovmodeler.h )
+ 
+-include_directories(${FREETYPE_INCLUDE_DIR})
++include_directories( ${FREETYPE_INCLUDE_DIR_freetype2} )
+ add_definitions (-DQT3_SUPPORT -DQT3_SUPPORT_WARNINGS)
+ 
+ ########### next target ###############
+@@ -306,7 +306,7 @@
+ 
+ kde4_add_executable(kpovmodeler ${kpovmodeler_SRCS})
+ 
+-target_link_libraries(kpovmodeler  ${KDE4_KDECORE_LIBS} lkpovmodeler )
++target_link_libraries(kpovmodeler  ${KDE4_KDECORE_LIBS} ${KDE4_KDEUI_LIBS} lkpovmodeler )
+ 
+ install(TARGETS kpovmodeler  ${INSTALL_TARGETS_DEFAULT_ARGS} )
+ 
