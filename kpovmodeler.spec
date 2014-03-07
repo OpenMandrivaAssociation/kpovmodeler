@@ -10,6 +10,7 @@ Patch0:		kpovmodeler-1.1.3-kde4.1.0-cmake.patch
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
+BuildRequires:	pkgconfig(glu)
 
 %description
 Program to enter scenes for the 3D rendering engine PovRay.
