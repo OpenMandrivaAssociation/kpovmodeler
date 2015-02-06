@@ -1,7 +1,7 @@
 Summary:	A modeling and composition program
 Name:		kpovmodeler
 Version:	1.1.3
-Release:	6
+Release:	7
 License:	GPLv2+
 Group:		Graphics
 Url:		http://www.kpovmodeler.org
