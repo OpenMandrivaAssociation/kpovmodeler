@@ -4,7 +4,7 @@ Version:	1.1.3
 Release:	7
 License:	GPLv2+
 Group:		Graphics
-Url:		http://www.kpovmodeler.org
+Url:		https://www.kpovmodeler.org
 Source0:	http://fr2.rpmfind.net/linux/KDE/stable/4.1.0/src/extragear/%{name}-%{version}-kde4.1.0.tar.bz2
 Patch0:		kpovmodeler-1.1.3-kde4.1.0-cmake.patch
 BuildRequires:	kdelibs4-devel
