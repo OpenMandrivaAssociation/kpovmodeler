@@ -7,6 +7,7 @@ Group:		Graphics
 Url:		https://www.kpovmodeler.org
 Source0:	http://fr2.rpmfind.net/linux/KDE/stable/4.1.0/src/extragear/%{name}-%{version}-kde4.1.0.tar.bz2
 Patch0:		kpovmodeler-1.1.3-kde4.1.0-cmake.patch
+BuildRequires:	make
 BuildRequires:	kdelibs4-devel
 BuildRequires:	pkgconfig(freetype2)
 BuildRequires:	pkgconfig(gl)
